@@ -1,5 +1,5 @@
 # rparseaddress
-**tenfourWest.com**(tenfourwest.com) function to parse addresses
+[**tenfourWest.com**](tenfourwest.com) function to parse addresses
 
 ## Installation in R
 
