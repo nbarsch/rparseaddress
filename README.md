@@ -13,7 +13,7 @@ remotes::install_github("nbarsch/rparseaddress")
 
 
 ## To parse addresses:
-```tfwstring::rparseaddress(address, check_python=TRUE, force_stateabb=FALSE, return="char")```
+```rparseaddress::rparseaddress(address, check_python=TRUE, force_stateabb=FALSE, return="char")```
 
 **On Mac and Linux** python AND the python module ``usaddress`` should automatically install if missing (because unix is superior clearly).
 
@@ -66,6 +66,8 @@ parsed_address Colgate University            13        Oak              Drive  H
 ## To Apply to: ADDRESS DATA.FRAME COLUMN -or- VECTOR OF ADDRESSES:
 
 ```
+library(rparseaddress)
+
 sampledf <- data.frame(adnum=c(1:4),addressvec=c("White House 1600 Pennsylvania Avenue NW Washington DC", "Colgate 13 Oak Dr. Hamilton, NY 13346","200 E Colfax Ave Denver, CO","355 E Kalamazoo Ave, Kalamazoo, MI 49007"),stringsAsFactors = F)
 
 #to get a full data.frame with parsed results
