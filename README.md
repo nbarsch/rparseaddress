@@ -32,7 +32,7 @@ remotes::install_github("nbarsch/rparseaddress")
                 StateName                   ZipCode 
                      "DC"                   "20500" 
 ```
-```rparseaddress("Biden's White House 1700 Pennsylvania Ave NW, Washington DC 20500", return="vertical")```
+```rparseaddress("Biden's White House 1600 Pennsylvania Ave NW, Washington DC 20500", return="vertical")```
 
 ```
 
