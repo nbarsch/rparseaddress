@@ -14,6 +14,7 @@ remotes::install_github("nbarsch/rparseaddress")
 
 ## To parse addresses:
 ```rparseaddress::rparseaddress(address, check_python=TRUE, force_stateabb=FALSE, return="char")```
+
 It is **NOT RECOMMENDED TO INSTALL MICROCONDA IF PROMPTED**. You should only be prompted on first use if at all.
 
 **On Mac and Linux** python AND the python module ``usaddress`` should automatically install if missing (because unix is superior clearly). 
