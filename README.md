@@ -24,27 +24,24 @@ remotes::install_github("nbarsch/rparseaddress")
 3. When running ```parseaddress()``` use ```check_python=FALSE``` to avoid issues running in the windows OS. 
 
 ## Simplest use
-```rparseaddress("Biden's White House 1600 Pennsylvania Ave NW, Washington DC 20500")```
+```rparseaddress("Colgate University 13 Oak Drive Hamilton, NY 13346")```
 
 ```
-                Recipient             AddressNumber                StreetName        StreetNamePostType StreetNamePostDirectional                 PlaceName 
-    "Biden's White House"                    "1600"            "Pennsylvania"                     "Ave"                      "NW"              "Washington" 
-                StateName                   ZipCode 
-                     "DC"                   "20500" 
+           Recipient        AddressNumber           StreetName   StreetNamePostType            PlaceName            StateName              ZipCode 
+"Colgate University"                 "13"                "Oak"              "Drive"           "Hamilton"                 "NY"              "13346"
 ```
-```rparseaddress("Biden's White House 1600 Pennsylvania Ave NW, Washington DC 20500", return="vertical")```
+```rparseaddress("Colgate University 13 Oak Drive Hamilton, NY 13346", return="vertical")```
 
 ```
 
                                parsed_address
-Recipient                 Biden's White House
-AddressNumber                            1600
-StreetName                       Pennsylvania
-StreetNamePostType                        Ave
-StreetNamePostDirectional                  NW
-PlaceName                          Washington
-StateName                                  DC
-ZipCode                                 20500
+Recipient                 Colgate University
+AddressNumber                             13
+StreetName                               Oak
+StreetNamePostType                     Drive
+PlaceName                           Hamilton
+StateName                                 NY
+ZipCode                                13346
 
 ```
 ```rparseaddress("Colgate University 13 Oak Drive Hamilton, NY 13346", return="horizontal")```
