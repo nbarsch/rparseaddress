@@ -6,7 +6,7 @@
 #' @param force_stateabb TRUE or FALSE, if TRUE state names are forced to abbreviation format for unified format
 #' @param return FORMAT TYPE for RETURNED RESULTS (1. "vertical" or "v" for vertical data.frame, 2. "horizontal" or "h" for horizontal data.frame, "c" or "char" for named character vector )
 #' @export
-parseaddress <- function(address, check_python=TRUE, force_stateabb=FALSE, return="char"){
+rparseaddress <- function(address, check_python=TRUE, force_stateabb=FALSE, return="char"){
 
   if(isTRUE(check_python)){
     system("sudo apt-get install python3-pip -y -qq > /dev/null")
